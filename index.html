@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hamza Akram — Frontend Developer Portfolio" />
+  <meta name="author" content="Hamza Akram" />
+  <title>Hamza Akram — Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <a class="nav-logo" href="#hero">Hamza<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="nav-btn">Hire Me</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-inner">
+
+      <div class="hero-text">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Available for Work
+        </div>
+        <h1 class="hero-title">Hamza <em>Akram</em></h1>
+        <div class="typewriter-wrap">
+          <span class="typewriter-prefix">I am a</span>
+          <span class="typewriter-text" id="typewriterText"></span>
+          <span class="typewriter-cursor"></span>
+        </div>
+        <p class="hero-sub">
+          I craft clean, fast, and purposeful web experiences — turning ideas into products that look great and work even better. Based in Pakistan, building for the world.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-outline">Get in Touch</a>
+        </div>
+        <div class="stats-row">
+          <div class="stat-item">
+            <span class="stat-num" data-count="10">0</span>
+            <span class="stat-label">Projects Done</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="1">0</span>
+            <span class="stat-label">Year Experience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="5">0</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-frame">
+          <!-- Apni photo lagao: src="hamza-professional-photo.jpeg" -->
+          <img src="hamza-professional-photo.jpeg" alt="Hamza Akram" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="hero-photo-placeholder" style="display:none;">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+            <span>Your Photo Here</span>
+          </div>
+        </div>
+        <div class="hero-photo-dot"></div>
+        <div class="hero-photo-border"></div>
+      </div>
+
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid">
+
+      <div class="about-text reveal">
+        <p class="section-label">Who I Am</p>
+        <h2 class="section-title">Building digital <em>experiences</em> with purpose</h2>
+        <p>
+          Hey! I'm <strong>Hamza Akram</strong>, a passionate web developer who loves turning complex problems into clean, simple solutions. I take an idea from zero to a fully functional product.
+        </p>
+        <p>
+          From pixel-perfect frontends with <strong>HTML, CSS & JavaScript</strong> to dynamic, interactive interfaces — I focus on code quality, performance, and user experience in everything I build.
+        </p>
+        <p>
+          When I'm not coding, I'm learning the latest in web tech, contributing to open source, and exploring new creative directions.
+        </p>
+        <div style="margin-top:2rem;">
+          <a href="#contact" class="btn-primary">Let's Talk →</a>
+        </div>
+      </div>
+
+      <!-- ✅ About section photo — same style as hero -->
+       <div class="profile-card reveal">
+<div class="profile-info">
+
+    <img src="hamza-about.jpeg" alt="">
+</div>
+        </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="reveal">
+      <p class="section-label">What I Know</p>
+      <h2 class="section-title">My <em>Tech Stack</em></h2>
+      <p class="section-desc">Technologies I use to build fast, clean, and functional web products — from markup to interactivity.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon">🌐</div>
+        <div class="skill-name">HTML & CSS</div>
+        <p class="skill-desc">Semantic, accessible markup with advanced CSS animations, Grid, Flexbox, and custom properties.</p>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="95"></div></div>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span>
+          <span class="skill-tag">Animations</span><span class="skill-tag">Flexbox</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-name">JavaScript</div>
+        <p class="skill-desc">Modern ES6+ JavaScript, DOM manipulation, async programming, and building interactive experiences.</p>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="88"></div></div>
+        <div class="skill-tags">
+          <span class="skill-tag">ES6+</span><span class="skill-tag">DOM API</span>
+          <span class="skill-tag">Fetch API</span><span class="skill-tag">Async/Await</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">📱</div>
+        <div class="skill-name">Responsive Design</div>
+        <p class="skill-desc">Mobile-first layouts, fluid typography, and cross-browser compatible interfaces that work on every device.</p>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="92"></div></div>
+        <div class="skill-tags">
+          <span class="skill-tag">Mobile-First</span><span class="skill-tag">Media Queries</span>
+          <span class="skill-tag">Cross-Browser</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🔧</div>
+        <div class="skill-name">Git & GitHub</div>
+        <p class="skill-desc">Version control with Git, collaborative workflows on GitHub, and maintaining clean commit history.</p>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div>
+        <div class="skill-tags">
+          <span class="skill-tag">Git</span><span class="skill-tag">GitHub</span>
+          <span class="skill-tag">Version Control</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🎨</div>
+        <div class="skill-name">UI/UX Design</div>
+        <p class="skill-desc">Designing clean, user-centered interfaces with attention to spacing, typography, and visual hierarchy.</p>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="78"></div></div>
+        <div class="skill-tags">
+          <span class="skill-tag">Figma</span><span class="skill-tag">Typography</span>
+          <span class="skill-tag">Color Theory</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🚀</div>
+        <div class="skill-name">Performance & SEO</div>
+        <p class="skill-desc">Optimized websites with fast load times, proper meta tags, and best practices for search engine visibility.</p>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="75"></div></div>
+        <div class="skill-tags">
+          <span class="skill-tag">Core Web Vitals</span><span class="skill-tag">SEO</span>
+          <span class="skill-tag">Optimization</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="projects-header reveal">
+      <p class="section-label">My Work</p>
+      <h2 class="section-title">Featured <em>Projects</em></h2>
+      <p class="section-desc">Real projects built with clean code and genuine attention to detail. Each one a learning journey.</p>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-banner">🛒<span class="project-num">01</span></div>
+        <div class="project-body">
+          <div class="project-title">E-Commerce Store</div>
+          <p class="project-desc">A fully responsive online store with product listings, cart functionality, and a clean checkout flow.</p>
+          <div class="project-tags"><span class="project-tag">HTML</span><span class="project-tag">CSS</span><span class="project-tag">JavaScript</span></div>
+          <div class="project-links">
+            <a href="https://github.com/hamzaakramcodes" class="project-link demo" target="_blank">Live Demo</a>
+            <a href="https://github.com/hamzaakramcodes" class="project-link code" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-banner">🌦️<span class="project-num">02</span></div>
+        <div class="project-body">
+          <div class="project-title">Weather Dashboard</div>
+          <p class="project-desc">Live weather app using OpenWeather API with search, dynamic icons, and detailed forecasts.</p>
+          <div class="project-tags"><span class="project-tag">JavaScript</span><span class="project-tag">API</span><span class="project-tag">CSS3</span></div>
+          <div class="project-links">
+            <a href="https://github.com/hamzaakramcodes" class="project-link demo" target="_blank">Live Demo</a>
+            <a href="https://github.com/hamzaakramcodes" class="project-link code" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-banner">📝<span class="project-num">03</span></div>
+        <div class="project-body">
+          <div class="project-title">Task Manager App</div>
+          <p class="project-desc">A drag-and-drop task board with local storage persistence, categories, and priority tagging.</p>
+          <div class="project-tags"><span class="project-tag">HTML</span><span class="project-tag">CSS</span><span class="project-tag">JS</span></div>
+          <div class="project-links">
+            <a href="https://github.com/hamzaakramcodes" class="project-link demo" target="_blank">Live Demo</a>
+            <a href="https://github.com/hamzaakramcodes" class="project-link code" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-banner">💼<span class="project-num">04</span></div>
+        <div class="project-body">
+          <div class="project-title">Agency Landing Page</div>
+          <p class="project-desc">Modern, animated agency website with smooth scroll, parallax sections, and contact form.</p>
+          <div class="project-tags"><span class="project-tag">HTML</span><span class="project-tag">CSS Animations</span><span class="project-tag">JS</span></div>
+          <div class="project-links">
+            <a href="https://github.com/hamzaakramcodes" class="project-link demo" target="_blank">Live Demo</a>
+            <a href="https://github.com/hamzaakramcodes" class="project-link code" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-banner">🎮<span class="project-num">05</span></div>
+        <div class="project-body">
+          <div class="project-title">JavaScript Quiz Game</div>
+          <p class="project-desc">Interactive quiz app with timer, score tracking, animated transitions, and multiple categories.</p>
+          <div class="project-tags"><span class="project-tag">JavaScript</span><span class="project-tag">CSS3</span><span class="project-tag">HTML5</span></div>
+          <div class="project-links">
+            <a href="https://github.com/hamzaakramcodes" class="project-link demo" target="_blank">Live Demo</a>
+            <a href="https://github.com/hamzaakramcodes" class="project-link code" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-banner">🎵<span class="project-num">06</span></div>
+        <div class="project-body">
+          <div class="project-title">Music Player UI</div>
+          <p class="project-desc">A sleek music player interface with animated waveform, playlist management, and playback controls.</p>
+          <div class="project-tags"><span class="project-tag">HTML</span><span class="project-tag">CSS</span><span class="project-tag">JavaScript</span></div>
+          <div class="project-links">
+            <a href="https://github.com/hamzaakramcodes" class="project-link demo" target="_blank">Live Demo</a>
+            <a href="https://github.com/hamzaakramcodes" class="project-link code" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div style="text-align:center; max-width:600px; margin:0 auto 4rem;" class="reveal">
+      <p class="section-label">Say Hello</p>
+      <h2 class="section-title">Let's build something <em>great</em> together</h2>
+      <p class="section-desc" style="margin:0 auto;">Have a project in mind? I'm open to new opportunities, collaborations, and interesting challenges.</p>
+    </div>
+    <div class="contact-grid">
+
+      <div class="contact-info reveal">
+        <h3>Get in Touch</h3>
+        <p>Drop me a message and I'll get back to you within 24 hours. Always happy to talk about new projects!</p>
+        <a href="mailto:hamzaakramcodes@gmail.com" class="contact-detail">
+          <div class="contact-icon">📧</div>
+          <div class="contact-text">
+            <small>Email</small>
+            <span>hamzaakramcodes@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://github.com/hamzaakramcodes" target="_blank" class="contact-detail">
+          <div class="contact-icon">🐙</div>
+          <div class="contact-text">
+            <small>GitHub</small>
+            <span>github.com/hamzaakramcodes</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/hamzaakramcodes/" target="_blank" class="contact-detail">
+          <div class="contact-icon">💼</div>
+          <div class="contact-text">
+            <small>LinkedIn</small>
+            <span>linkedin.com/in/hamzaakramcodes</span>
+          </div>
+        </a>
+        <div class="social-links">
+          <a href="https://github.com/hamzaakramcodes" target="_blank" class="social-link" title="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/hamzaakramcodes/" target="_blank" class="social-link" title="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:hamzaakramcodes@gmail.com" class="social-link" title="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="https://wa.me/923196491799" class="social-link" title="WhatsApp">
+            <i class="fa-brands fa-whatsapp" style="font-size:20px;"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form reveal">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="John" />
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Doe" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="john@example.com" />
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Project inquiry..." />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button class="btn-send" onclick="handleFormSubmit(event)">Send Message →</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">Hamza<span>.</span></div>
+    <p class="footer-copy">© 2025 Hamza Akram — Built with HTML, CSS & JS</p>
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
